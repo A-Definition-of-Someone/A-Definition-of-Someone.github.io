@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume: Muhammad Ayman bin Muhammad Idzmi</title>
+    <style>
+        body{
+            display: grid;
+            margin: 0;
+            padding: 0;
+            row-gap: 5px;
+        }
+        .A4{
+            display: grid;
+            box-sizing: border-box;
+            border: 1px solid black;
+            min-height: min(100dvh, 297mm);
+            width: min(100dvw, 210mm);
+            place-self: center center;
+            padding-top: 15mm;
+            padding-left: 15mm;
+            padding-right: 15mm;
+            padding-bottom: 15mm;
+        }
+
+        #IntroName{
+            font-size: xx-large;
+            font-weight: bold;
+        }
+        #CurrentRole{
+            font-size: larger;
+            font-weight: bold;
+            color: orangered;
+        }
+
+        #ContactDetails{
+            display: grid;
+            color: orangered;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        #ContactDetails span b::after{
+            content: ': ';
+        }
+
+        #ContactDetails span a{
+            color: orangered;
+            text-decoration: none;
+        }
+
+        #AddressDetails{
+            display: grid;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        .Category{
+            font-size: larger;
+            font-weight: bold;
+        }
+
+        .Education{
+            display: grid;
+        }
+
+        .EduFirst{
+            margin-top: 15px;
+        }
+
+        .Education address{
+            font-size: small;
+            color: gray;
+        }
+
+        .Education p{
+            font-size: medium;
+        }
+
+        .Awards{
+            display: grid;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .MyProject{
+            display: grid;
+            margin-bottom: 10px;
+        }
+
+        .MyProject b{
+            font-size: medium;
+        }
+
+        .MyProject span{
+            color: gray;
+            font-size: small;
+        }
+
+        .MyProject a{
+            text-decoration: none;
+            color:dodgerblue;
+            word-break: break-all;
+        }
+
+        .Attachments{
+            display: grid;
+            margin-top: 15px;
+        }
+
+        .RowBorder{
+            display: block;
+            background-color: black;
+            height: 4px;
+            width: 100%;
+        }
+
+        .RBHeader{
+            margin-top: 6px;
+        }
+        .SmallRowBorder{
+            display: block;
+            background-color: black;
+            height: 2px;
+            width: 10%;
+            margin-top: 6px;
+        }
+
+        .A4 table{
+            height: min-content;
+            border-collapse: collapse;
+        }
+
+        .A4 table tr td:nth-child(1){
+            width: 28%;
+            box-sizing: border-box;
+            padding-top: 0;
+            vertical-align: top;
+        }
+
+        .A4 table tr td:nth-child(2){
+            box-sizing: border-box;
+            vertical-align: top;
+        }
+
+        @media print{
+            .A4{
+                padding: 0;
+                border: 0;
+                print-color-adjust: exact;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="A4">
+        <table>
+            <tr>
+                <td>
+                    <span id="IntroName">Muhammad Ayman bin Muhammad Idzmi</span>
+                    <br>
+                    <span id="CurrentRole">Fresh Graduate</span>
+                    <br>
+                </td>
+                <td>
+                    <div class="RowBorder RBHeader"></div>
+                    <div id="AddressDetails">
+                        <b>Muhammad Ayman bin Muhammad Idzmi</b>
+                        <address>Residing in Petaling Jaya, Selangor</address>
+                    </div>
+                    
+                    <div id="ContactDetails">
+                        <span><b>Whatsapp</b><a href="">+601126653700</a></span>
+                        <span><b>Email</b><a href="">aymanidzmi@gmail.com</a></span>
+                        <span><b>LinkedIn</b><a href="">www.linkedn.com/in/ayman-idzmi-469ga7383</a></span>
+                        <span><b>Github</b><a href="">https://github.com/A-Definition-of-Someone</a></span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="SmallRowBorder"></div>
+                    <br>
+                    <span class="Category">Skills</span>
+                </td>
+                <td>
+                    <div class="RowBorder"></div>
+                    <p><b>Frontend</b> (HTML, CSS, JS) with Draw.IO for creating Mockup Designs</p>
+                    <p><b>Backend</b> (Django Framework (Python), Java Swing (Java), Xampp (PHP))</p>
+                    <p><b>Basic Database management</b> (phpMyAdmin, MySQL)</p>
+                    <p><b>Embedded Programming</b> with C++, interfacing with I2C LCD and currently learning SPI to interface with SD Card</p>
+                    <p><b>Basic Photo Editing</b> using Gimp and <b>Basic Video Editing</b> with Shotcut</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="SmallRowBorder"></div>
+                    <br>
+                    <span class="Category">Education</span>
+                </td>
+                <td>
+                    <div class="RowBorder"></div>
+                    <div class="Education EduFirst">
+                        <span><b>Unitar International University</b> / Bachelor</span>
+                        <address>UNITAR International University Tierra Crest, Jalan SS 6/3, Ss 6, 47301 Petaling Jaya, Selangor</address>
+                        <p>Currently taking a Bachelor in Information Technology, Majoring in Software Engineering.</p>
+                    </div>
+                    <div class="Education">
+                        <span><b>MMU Cyberjaya</b> / Diploma</span>
+                        <address>Persiaran Multimedia, 63100 Cyberjaya, Selangor</address>
+                        <p>Achieved Distinction in Diploma in Information Technology.</p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="SmallRowBorder"></div>
+                    <br>
+                    <span class="Category">Awards</span>
+                </td>
+                <td>
+                    <div class="RowBorder"></div>
+                    <div class="Awards">
+                        <span>Earned Dean’s List award</span>
+                        <span>Distinction in Diploma In Information Technology</span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="SmallRowBorder"></div>
+                    <br>
+                    <span class="Category">My Projects</span>
+                </td>
+                <td>
+                    <div class="RowBorder"></div>
+                    <div class="MyProject EduFirst">
+                        <b>Phantom Chess: The Game Of Dissappearing And Changing Loyalties</b>
+                        <span>Individual Project, Django Framework, Python</span>
+                        <a href="">https://github.com/A-Definition-of-Someone/Prototype-1</a>
+                    </div>
+                    <div class="MyProject">
+                        <b>Java Swing Shopping System</b>
+                        <span>Individual Project, Java Swing</span>
+                        <a href="">https://github.com/A-Definition-of-Someone/MC230120384-Quiz1</a>
+                    </div>
+                    <div class="MyProject">
+                        <b>Leave Management</b>
+                        <span>Group Project, Xampp, PHP</span>
+                        <a href="">https://github.com/A-Definition-of-Someone/ITWB4134_SAD_Group3_Assignment2</a>
+                    </div>
+                    <div class="MyProject">
+                        <b>I2C LCD With Raspberry Pi Pico</b>
+                        <span>Hobby Project, Raspberry Pi Pico, I2C Protocol, C++</span>
+                        <a href="">https://github.com/A-Definition-of-Someone/Pico_LCD_OneLine</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="SmallRowBorder"></div>
+                    <br>
+                    <span class="Category">Attachments</span>
+                </td>
+                <td>
+                    <div class="RowBorder"></div>
+                    <div class="Attachments">
+                        <span>Diploma In Information Technology</span>
+                        <span>Latest Dean’s List</span>
+                        <span>General Letter from Unitar for Internship Placement</span>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="A4">lol</div>
+</body>
+</html>
