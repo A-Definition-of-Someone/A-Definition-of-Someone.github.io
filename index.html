@@ -46,6 +46,11 @@
                 z-index: 2;
                 color: orangered;
             }
+            .AwardsItem img{
+                max-width: 95dvw;
+                max-height: 50dvh;
+                aspect-ratio: 210 / 297;
+            }
         }
         body{
             display: grid;
@@ -168,6 +173,7 @@
         }
         .AwardsItem{
             cursor: pointer;
+            width: fit-content;
         }
         .AwardsItem img{
             display: none;
@@ -175,7 +181,8 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            min-width: 20dvw;
+            max-height: min(100dvh, 297mm);
+            max-width: min(100dvw, 210mm);
         }
         #MyProjectsContent{
             display: grid;
@@ -256,11 +263,11 @@
             <div id="AwardsContent">
                 <div class="AwardsItem">
                     <span>Earned Dean's List award</span>
-                    <img src="" alt="Dean's List Award">
+                    <img src="./Latest Unitar Dean's List.png" alt="Dean's List Award">
                 </div>
                 <div class="AwardsItem">
                     <span>Distinction in Diploma In Information Technology</span>
-                    <img src="" alt="Distinction in Diploma In Information Technology">
+                    <img src="./Copy of MMU Diploma Certificate.png" alt="Distinction in Diploma In Information Technology">
                 </div>
             </div>
         </div>
