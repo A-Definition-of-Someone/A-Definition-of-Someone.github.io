@@ -1,2 +1,2 @@
 # A-Definition-of-Someone.github.io
-Testing Github Pages
+Github Pages for my Resume, which also demonstrates my proficiency with HTML and CSS
